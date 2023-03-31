@@ -1,0 +1,117 @@
+
+.hum {
+  display: none;
+}
+
+.globalMenuSp {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+  .nav-main {
+      display: none;
+  }
+
+  /*　ハンバーガーメニューボタン　*/
+  .hum {
+    display: block;
+      width : 42px;
+      height: 42px;
+      cursor: pointer;
+      text-align: center;
+      position: relative;
+  }
+
+  .hum span {
+      display : block;
+      position: absolute;
+      width   : 30px;
+      height  : 2px ;
+      left    : 6px;
+      background : #BBBBBB;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition   : 0.3s ease-in-out;
+      transition        : 0.3s ease-in-out;
+  }
+
+  .hum span:nth-child(1) {
+      top: 10px;
+  }
+      
+  .hum span:nth-child(2) {
+      top: 20px;
+  }
+
+  .hum span:nth-child(3) {
+      top: 30px;
+  }
+      
+      /* スマホメニューを開いてる時のボタン */
+  .hum.active span:nth-child(1) {
+      top : 16px;
+      left: 6px;
+      background :#fff;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform   : rotate(-45deg);
+      transform        : rotate(-45deg);
+  }
+
+  .hum.active span:nth-child(2),
+  .hum.active span:nth-child(3) {
+      top: 16px;
+      background :#fff;
+      -webkit-transform: rotate(45deg);
+      -moz-transform   : rotate(45deg);
+      transform        : rotate(45deg);
+  }
+
+  /* メニュー背景　*/
+
+.globalMenuSp {
+    font-size: 3rem;
+      position: fixed;
+      z-index : 1000;
+      top  : 0;
+      left : 0;
+      color: #fff;
+      background: rgba(134, 10, 10, 0.9);
+      text-align: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: all 0.6s;
+      padding-top: 120px;
+
+  }
+
+  div.globalMenuSp ul {
+      margin: 0 auto;
+  }
+
+  div.globalMenuSp ul li {
+      transition: .4s all;
+  }
+
+  div.globalMenuSp ul li:last-child {
+      padding-bottom: 0;
+  }
+
+  div.globalMenuSp ul li:hover{
+      background :#ddd;
+  }
+
+  div.globalMenuSp ul li a {
+      display: block;
+      color: #fff;
+      padding: 1em 0;
+      text-decoration :none;
+  }
+
+  /* クリックでjQueryで追加・削除 */
+  div.globalMenuSp.active {
+      opacity: 100;
+      display: block;
+      transform: translateX(0%);
+  }
+
+}

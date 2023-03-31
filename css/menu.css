@@ -1,0 +1,133 @@
+@import "./nav.css";
+@import "./style.css";
+
+/* ======================menu-attention-start=================================== */
+
+.menu-page {
+    margin-top: 120px;
+    padding-bottom: 2rem;
+}
+
+.menu-page-contents {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-page-image {
+    width: 420px;
+    height: 460px;
+}
+
+.menu-page-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.menu-attention {
+    width: 720px;
+    height: 460px;
+}
+
+.menu-attention img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+/* ======================menu-attention-end=================================== */
+
+
+/* ======================poker-start=================================== */
+
+.poker-container {
+    padding: 3rem 0 ;
+
+}
+.poker-contents {
+    border: 1px solid var(--fontSubColor);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 10%;
+
+}
+
+.h4 {
+    width: 220px;
+    height: 60px;
+}
+
+.h4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poker-text {
+    margin-left: 2rem;
+    padding: 1.2rem 0 ;
+    font-size: 1.6rem;
+}
+
+
+.chip-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.price {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--fontMainColor);
+    padding: 2.2rem 0;
+}
+
+
+.chip-h3 {
+    text-align: left;
+    width: 120px;
+}
+
+.chip-h4 {
+    width: 300px;
+}
+
+.chip-h4 span {
+    margin-left: 2rem;
+}
+
+
+
+
+/* ======================poker-end=================================== */
+
+
+@media screen and (max-width:480px) {
+
+    .menu-page-contents {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-page-image {
+        width: 320px;
+        height: 230px;
+        padding-bottom: 2.2rem;
+    }
+
+    .menu-attention {
+        width: 370px;
+        height: 240px;
+    }
+
+    .poker-contents {
+        max-width: 370px;
+    }
+}
